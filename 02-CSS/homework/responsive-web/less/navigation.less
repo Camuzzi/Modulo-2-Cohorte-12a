@@ -1,0 +1,54 @@
+// Código de Nav acá
+/* .NavBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; //eje horizontal
+    background-color: @nav-bg;
+    border: @nav-border;
+    padding-top: 15px;
+}
+
+li{
+    display: flex;
+    justify-content: space-around;
+    font: @nav-font;
+    width: 50%;
+    margin: 1em;
+}
+
+.Titulo{
+    display: flex;
+    justify-content: center;
+} */
+
+nav {
+    background-color: @nav-bg;
+    border: @nav-border solid 2px;
+    padding-top: 15px;
+    width: 100%;
+    .flex(column, center);
+  
+    font: @nav-font;
+    h1 {
+      font-size: xx-large;
+      text-align: center;
+    }
+  
+    ul {
+      .flex(row,space-around);
+      margin: 10px;
+      width: 50%;
+      .alineacion();
+  
+      @media @phone {
+        width: 100%;
+      }
+    }
+  
+    a {
+      text-decoration: none;
+      color: @nav-font;
+      font-weight: bold;
+    }
+  }
